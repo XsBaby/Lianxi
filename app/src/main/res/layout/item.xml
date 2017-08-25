@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text="秦心"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/userAge"
+            android:layout_below="@id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userName"
+            android:layout_marginTop="5dp"
+            android:text="26岁"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/occupation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/userAge"
+            android:layout_marginLeft="14dp"
+            android:layout_toEndOf="@+id/userAge"
+            android:layout_toRightOf="@+id/userAge"
+            android:text="银行"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userAge"
+            android:layout_below="@+id/userAge"
+            android:layout_marginTop="5dp"
+            android:text="90年/天蝎座/爱美食，爱分享，有点内向/喜欢阳光，干净，175+的男孩子/银行接待"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+</LinearLayout>
